@@ -1,0 +1,277 @@
+::-webkit-scrollbar{
+  background: #f8ecb7;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #420505;
+  border-radius: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #f8ecb7;
+}
+
+section{
+    min-height: 100vh;
+    width: 100vw;
+    position: relative;
+
+}
+
+nav{
+    width: 100wh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8ecb7;
+    position: relative;
+    padding: 15px;
+  
+}
+
+nav h2{
+    color: #420505;
+    flex: 1;
+    font-size: 35px;
+
+}
+
+nav ul{
+    list-style: none;
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: #420505;
+    width: 70px;
+}
+
+nav ul li a:hover {
+  border-bottom: 2px #fff solid;
+
+}
+
+
+/* home section */
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+  }
+  
+  .content {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 1s ease-in-out forwards;
+  }
+  
+  .text1 {
+    font-size: 26px;
+    color: #420505;
+  }
+  
+  .my-name {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #420505;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text2 {
+    font-size: 24px;
+    color: #420505;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+
+  .scroll-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin: 30px 120px;
+    background-color: #420505;
+    border-radius: 9px;
+  }
+
+  .scroll-btn a {
+    text-decoration: none;
+    color: #f8ecb7;
+  }
+  
+
+
+
+/* about section */
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.about-section {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.about .container {
+  width: 350px;
+  position: relative;
+}
+
+.about .container h2 {
+  font-size: 28px;
+  margin: 20px 10px;
+}
+
+.about .container p {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.about .image-container {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 150px;
+
+}
+
+.my-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* contact section  */
+
+
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 50px;
+}
+
+.contact {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form input[type="submit"] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 430px;
+}
+.contact-form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* footer section  */
+
+.footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-links li {
+  margin-right: 10px;
+}
+
+.footer-links li:last-child {
+  margin-right: 0;
+}
+
+.footer-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
