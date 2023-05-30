@@ -11,23 +11,23 @@
     <nav class="navbar">
         <h2>Munazza</h2>
         <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
             <li><a href="">Skills</a></li>
             <li><a href="">My Work</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#contact-section">Contact</a></li>
         </ul>
     </nav>
 
     <!-- home section -->
 
-    <section class="home">
+    <section class="home" id="home-section">
         <div class="content">
             <p class="text1">Hello, My name is</p>
               <h2 class="my-name">Munazza Begam</h2>
               <p class="text2">I'm a Front-end Web Developer</p>
               <div class="scroll-btn">
-                <a href="">Scroll</a>
+                <a href="#about-section">Scroll</a>
               </div>
         </div>
     </section>
@@ -35,8 +35,8 @@
 
     <!-- about section -->
 
-    <section class="about">
-        <div class="about-section">
+    <section class="about-section" id="about-section">
+        <div class="about">
         <div class="container">
             <h2 align="center">About Me</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, aliquam molestias minima debitis beatae ipsa. Delectus, praesentium dolor sunt numquam, enim impedit, sit nostrum dolores porro voluptatibus repellendus quibusdam illum quos? Delectus ad eveniet sapiente vitae illum velit repellendus blanditiis! Mollitia deleniti blanditiis, nesciunt quaerat sapiente adipisci dignissimos eaque eos?</p>
@@ -49,58 +49,39 @@
 
     <!-- contact section -->
  
-    <section class="contact-section">
-        <div class="contact">
-            <h2>Contact me</h2>
-        </div>
-        <form action="process_form.php" method="POST" class="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
+    <section class="contact-section" id="contact-section">
+      <div class="contact">
+          <h2>Contact me</h2>
+          <div class="msg">
+          <form action="https://formspree.io/f/moqzryyn" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Name" required>
             
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="Email" required>
-          
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-          
-            <input type="submit" value="Submit">
-          </form>
-    </section>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+            
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            
+              <button type="submit">Send Message</button>
+            </form> 
+          </div> 
+      </div>
+  </section>
 
 
-    <!-- <section>    <h1 id="typewriter"></h1>
-</section> -->
-<!-- <script>
-    const text = "Welcome to my Portfolio!"; // The text you want to animate
-const speed = 100; // The speed of the typewriter effect in milliseconds
-
-let i = 0;
-const typewriter = document.getElementById("typewriter");
-
-function typeWriter() {
-  if (i < text.length) {
-    typewriter.textContent += text.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
-
-typeWriter();
-
-</script> -->
+    <!-- footer section  -->
 
 
     <footer class="footer">
         <div class="footer-content">
           <p>&copy; 2023 Munazza</p>
           <ul class="footer-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#home-section">Home</a></li>
+            <li><a href="#about-section">About</a></li>
             <li><a href="#">Skills</a></li>
             <li><a href="#">My Work</a></li>
-            <li><a href="#">Contact</a></li>
-
-            
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
         </div>
       </footer>
