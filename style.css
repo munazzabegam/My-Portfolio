@@ -60,7 +60,7 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-  border-bottom: 2px #fff solid;
+  color: #fff;
 
 }
 
@@ -69,10 +69,10 @@ nav ul li a:hover {
 
 .home {
     display: flex;
+    justify-content: center;
     align-items: center;
     text-align: center;
     height: 100vh;
-    margin-left: 200px;
   }
   
   .content {
@@ -141,12 +141,14 @@ nav ul li a:hover {
 }
 
 .about-section .container h2 {
-  font-size: 28px;
+  font-size: 40px;
   margin: 20px 10px;
+  color: #420505;
 }
 
 .about-section .container p {
-  font-size: 20px;
+  font-size: 18px;
+  color: #2e2222;
   line-height: 1.5;
   text-align: center;
 }
@@ -177,6 +179,127 @@ nav ul li a:hover {
   }
 }
 
+
+/* skill section  */
+
+.skills {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.skills-title h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #420505;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  display: inline-flex;
+}
+
+.skill {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #420505;
+}
+
+.skill-progress {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  height: 20px;
+  position: relative;
+}
+
+.skill-progress-bar {
+  background-color: #420505;
+  border-radius: 5px;
+  height: 100%;
+  width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: width 1s ease-in-out;
+}
+
+.skill-progress-label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  font-size: 16px;
+  color: #420505;
+}
+
+.skill:hover .skill-progress-bar {
+  width: calc(var(--percent) * 1%);
+}
+
+
+
+/* works section */
+
+.works {
+  background-color: #f8ecb7;
+}
+
+
+.works-title h2{
+  background-color: #f8ecb7;
+  color: #420505;
+  padding: 19px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0 30px 0px;
+}
+
+.cards .card-one{
+  width: 300px;
+  height: 350px;
+  border-radius: 18px;
+  background-color: #f8f7f2;
+  color: #420505;
+}
+
+.cards .card-one .card-one-content {
+  display: none;
+  background-color: #f8f7f2;
+
+
+}
+
+/* .card .card-one .card-one-content :hover {
+  display: block;
+  background-color: #5a4c04;
+
+} */
+
+.cards .card-one img {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  margin: 30px 40px 0 30px;
+  border-radius: 10px;
+}
+
+
 /* contact section  */
 
 
@@ -186,16 +309,15 @@ nav ul li a:hover {
 }
 
 .contact h2{
-  background-color: #080707;
+  background-color: #420505;
   color: #fff;
   text-align: center;
-  padding: 20px;
+  padding: 20px;                                                       
 }
 
 form {
   display: flex;
   flex-direction: column;
-  /* padding: 100px; */
   padding: 20px 100px;
   margin: 0px 200px;
 }
@@ -223,16 +345,17 @@ textarea {
 button {
   padding: 10px 100px;
   margin: 0px 0px;
-  background-color: #333;
+  background-color: #420505;
   color: #fff;
   border: none;
   border-radius: 12px;
   cursor: pointer;
+  font-weight: 300px;
 }
 
 button:hover {
-  background-color: burlywood;
-  color: #333;
+  background-color: #f8ecb7;
+  color: #000000;
 }
 
 /* footer section  */
@@ -250,6 +373,25 @@ button:hover {
 
 .footer p {
   margin-bottom: 10px;
+}
+.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-links li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  color: #333;
+}
+
+.social-links a :hover {
+  color: #f8ecb7;
 }
 
 .footer-links {
@@ -274,4 +416,8 @@ button:hover {
 
 .footer-links a:hover {
   text-decoration: underline;
+  color: #e7d47f;
 }
+
+
+
