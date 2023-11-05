@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Portfolio</title>
@@ -37,7 +38,7 @@
 
     <!-- about section -->
 
-    <section class="about-section" id="about-section">
+    <section class="about-section" id="about-section" data-aos="fade-down" data-aos-delay="100"  data-aos-easing="linear" data-aos-delay="100"  data-aos-duration="1500">
         <div class="about">
         <div class="container">
             <h2 align="center">About Me</h2>
@@ -93,7 +94,7 @@
     </div>
     <div class="skills-container">
       <div class="skill">
-        <div class="skill-name" id="skill4">sql</div>
+        <div class="skill-name" id="skill4">SQL</div>
         <div class="skill-progress">
           <div class="skill-progress-bar" data-percent="40"></div>
           <span class="skill-progress-label">40%</span>
@@ -102,7 +103,7 @@
     </div>
     <div class="skills-container">
       <div class="skill">
-        <div class="skill-name" id="skill4">php</div>
+        <div class="skill-name" id="skill4">PHP</div>
         <div class="skill-progress">
           <div class="skill-progress-bar" data-percent="40"></div>
           <span class="skill-progress-label">40%</span>
@@ -188,22 +189,27 @@
     <!-- contact section -->
  
     <section class="contact-section" id="contact-section">
-      <div class="contact">
-          <h2>Contact me</h2>
-          <div class="msg">
-          <form action="https://formspree.io/f/moqzryyn" method="post">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" placeholder="Name" required>
-            
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" placeholder="Email" required>
-            
-              <label for="message">Message:</label>
-              <textarea id="message" name="message" required></textarea>
-            
-              <button type="submit">Send Message</button>
-            </form> 
-          </div> 
+      <div class="contact-title">
+        <h2>Contact Us</h2>
+      </div>
+      <div class="contact-container">
+          <div class="message">
+              <form action="" method="post">
+                  <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" name="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" name="email" placeholder="Email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" name="message" placeholder="Your message here" required></textarea>
+                  </div>
+                  <button type="submit">Send Message</button>
+              </form>
+          </div>
       </div>
   </section>
 
@@ -231,5 +237,9 @@
       </footer>
  
       <script src="script.js"></script>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>

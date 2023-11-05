@@ -147,7 +147,7 @@ nav ul li a:hover {
 }
 
 .about-section .container p {
-  font-size: 18px;
+  font-size: 19px;
   color: #2e2222;
   line-height: 1.5;
   text-align: center;
@@ -158,7 +158,7 @@ nav ul li a:hover {
   height: 350px;
   border-radius: 50%;
   overflow: hidden;
-  margin-left: 150px;
+  margin-left: 170px;
 
 }
 
@@ -213,7 +213,7 @@ nav ul li a:hover {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #420505;
+  color: #422605;
 }
 
 .skill-progress {
@@ -239,7 +239,7 @@ nav ul li a:hover {
   transform: translateY(-50%);
   right: 10px;
   font-size: 16px;
-  color: #420505;
+  color: rgb(179, 178, 176);
 }
 
 .skill:hover .skill-progress-bar {
@@ -285,12 +285,6 @@ nav ul li a:hover {
 
 }
 
-/* .card .card-one .card-one-content :hover {
-  display: block;
-  background-color: #5a4c04;
-
-} */
-
 .cards .card-one img {
   position: absolute;
   height: 200px;
@@ -303,60 +297,75 @@ nav ul li a:hover {
 /* contact section  */
 
 
-.contact {
-  background-color: #fff;
+.contact-section {
+  background-color: #ffffff;
   width: 100%;
 }
 
-.contact h2{
+.contact-title {
   background-color: #420505;
   color: #fff;
   text-align: center;
-  padding: 20px;                                                       
+  padding: 20px;  
+  font-size: 24px;
+  width: 100%; 
+  margin-bottom: 40px;                                                  
 }
 
-form {
+.contact-container {
+  background-color: #ffffff;
+  width: 450px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+.contact-container .message {
   display: flex;
-  flex-direction: column;
-  padding: 20px 100px;
-  margin: 0px 200px;
+  justify-content: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
 }
 
 label {
   font-weight: bold;
-  margin-top: 20px;
-  padding: 20px 0px;
-  margin: 0px 0px;
+  font-size: 18px;
 }
 
-#message {
-  height: 20vh;
-}
-
-input,
-textarea {
-  padding: 20px;
-  margin-bottom: 20px;
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  border: none;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  width: 100%;
+  margin-top: 9px;
+}
+
+textarea {
+  height: 120px;
 }
 
 button {
-  padding: 10px 100px;
-  margin: 0px 0px;
-  background-color: #420505;
-  color: #fff;
+  padding: 10px 20px;
+  background-color: rgb(59, 0, 0);
+  color: #ffffff;
   border: none;
-  border-radius: 12px;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: 300px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 button:hover {
   background-color: #f8ecb7;
-  color: #000000;
+  color: black;
 }
+
 
 /* footer section  */
 
