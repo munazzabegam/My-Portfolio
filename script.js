@@ -30,6 +30,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-   
+
+  // function toggleCardContent(card) {
+  //   const cardContent = card.querySelector('.card-one-content');
+  //   cardContent.style.display = cardContent.style.display === 'flex' ? 'none' : 'flex';
+  // }
+
+
+  // function openModal(src, title, details) {
+  //   document.getElementById('modalIframe').src = src;
+  //   document.getElementById('modalDetails').innerHTML = '<h3>' + title + '</h3><p>' + details + '</p>';
+  //   document.getElementById('modalOverlay').style.display = 'flex';
+  // }
+
+  // function closeModal() {
+  //   document.getElementById('modalOverlay').style.display = 'none';
+  // }
+
+
+  function openModal(src, title, details) {
+    document.getElementById('modalIframe').src = src;
+    document.getElementById('modalDetails').innerHTML = '<h3>' + title + '</h3><p>' + details + '</p>';
+    document.getElementById('modalOverlay').style.display = 'flex';
+    document.body.classList.add('modal-open');
+  }
+
+  function closeModal() {
+    document.getElementById('modalOverlay').style.display = 'none';
+    document.body.classList.remove('modal-open');
+  }
+  
   
   

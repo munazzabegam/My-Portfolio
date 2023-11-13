@@ -117,74 +117,75 @@
 
     <!-- works section  -->
 
-    <div class="works" id="work-section">
-      <div class="works-title">
-        <h2>My Works</h2>
+  <div class="works" id="work-section">
+    <div class="works-title">
+      <h2>My Works</h2>
+    </div>
+    <div class="cards">
+  
+      <!-- work-1-->
+      <div class="card-one" onclick="openModal('https://ec-notes.netlify.app/', 'Project Title', 'Details about your website go here.')">
+        <div class="card1-container">
+          <div class="image1">
+            <iframe src="https://ec-notes.netlify.app/" frameborder="0"></iframe>
+          </div>
+          <div class="card1-title">
+            <h3>Project Title</h3>
+          </div>
+        </div>
       </div>
-      <div class="cards">
 
-        <!-- work-1-->
-        <div class="card-one">
-          <div class="card1-container">
-            <div class="card1-title">
-              <h3 style="text-align: center;padding: 8px 5px 0px 5px;">Project Title</h3>
-            </div>
-            <div class="image1">
-              <img src="Images/image-error.png" alt="" srcset="">
-            </div>
-            <div class="card-one-content" style="margin: 5px;">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae asperiores accusantium reiciendis inventore voluptatibus, laborum corrupti omnis sit voluptates pariatur non repudiandae delectus aspernatur quibusdam iure distinctio. Non, quidem dolor.</p>
-            </div>
+      <!-- work-2-->
+      <div class="card-one" onclick="openModal('https://ec-notes.netlify.app/', 'Project Title', 'Details about your website go here.')">
+        <div class="card1-container">
+          <div class="image1">
+            <iframe src="https://ec-notes.netlify.app/" frameborder="0"></iframe>
+          </div>
+          <div class="card1-title">
+            <h3>Project Title</h3>
           </div>
         </div>
+      </div>
 
-        <!-- work-2-->
-        <div class="card-one">
-          <div class="card1-container">
-            <div class="card1-title">
-              <h3 style="text-align: center;padding: 8px 5px 0px 5px;">Project Title</h3>
-            </div>
-            <div class="image1">
-              <img src="Images/image-error.png" alt="" srcset="">
-            </div>
-            <div class="card-one-content" style="margin: 5px;">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae asperiores accusantium reiciendis inventore voluptatibus, laborum corrupti omnis sit voluptates pariatur non repudiandae delectus aspernatur quibusdam iure distinctio. Non, quidem dolor.</p>
-            </div>
+      <!-- work-3-->
+      <div class="card-one" onclick="openModal('https://ec-notes.netlify.app/', 'Project Title', 'Details about your website go here.')">
+        <div class="card1-container">
+          <div class="image1">
+            <iframe src="https://ec-notes.netlify.app/" frameborder="0"></iframe>
+          </div>
+          <div class="card1-title">
+            <h3>Project Title</h3>
           </div>
         </div>
+      </div>
 
-        <!-- work-3-->
-        <div class="card-one">
-          <div class="card1-container">
-            <div class="card1-title">
-              <h3 style="text-align: center;padding: 8px 5px 0px 5px;">Project Title</h3>
-            </div>
-            <div class="image1">
-              <img src="Images/image-error.png" alt="" srcset="">
-            </div>
-            <div class="card-one-content" style="margin: 5px;">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae asperiores accusantium reiciendis inventore voluptatibus, laborum corrupti omnis sit voluptates pariatur non repudiandae delectus aspernatur quibusdam iure distinctio. Non, quidem dolor.</p>
-            </div>
+
+      <!-- work-4-->
+      <div class="card-one" onclick="openModal('https://ec-notes.netlify.app/', 'Project Title', 'Details about your website go here.')">
+        <div class="card1-container">
+          <div class="image1">
+            <iframe src="https://ec-notes.netlify.app/" frameborder="0"></iframe>
+          </div>
+          <div class="card1-title">
+            <h3>Project Title</h3>
           </div>
         </div>
-
-        <!--work-4-->
-        <div class="card-one">
-          <div class="card1-container">
-            <div class="card1-title">
-              <h3 style="text-align: center;padding: 8px 5px 0px 5px;">Project Title</h3>
-            </div>
-            <div class="image1">
-              <img src="Images/image-error.png" alt="" srcset="">
-            </div>
-            <div class="card-one-content" style="margin: 5px;">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae asperiores accusantium reiciendis inventore voluptatibus, laborum corrupti omnis sit voluptates pariatur non repudiandae delectus aspernatur quibusdam iure distinctio. Non, quidem dolor.</p>
-            </div>
-          </div>
-        </div>
-
+      </div>
+  
+  
+    </div>
+  </div>
+  
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">×</span>
+      <iframe id="modalIframe" frameborder="0"></iframe>
+      <div id="modalDetails">
+        <h3>Project Title</h3>
+        <p>Details about your website go here. Describe the technologies used, the purpose of the project, and any other relevant information.</p>
       </div>
     </div>
+  </div>
 
     <!-- contact section -->
  
@@ -224,7 +225,7 @@
             <li><a href="http://wa.me/+918197458962"><i class="fab fa-whatsapp"></i></a></li></li>
             <li><a href="https://www.instagram.com/_.sh_eh_za_di._/"><i class="fab fa-instagram"></i></a></li></li>
             <li><a href="http://github.com/munazzabegam"><i class="fab fa-github"></i></a></li></li>
-            <li><a href="http://www.linkedin.com/in/munazza-begam"><i class="fab fa-linkedin-square"></i></a></li></li>
+            <li><a href=""><i class="fab fa-linkedin-square"></i></a></li></li>
           </ul>
           <ul class="footer-links">
             <li><a href="#home-section">Home</a></li>
